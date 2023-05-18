@@ -15,7 +15,7 @@ extern char **ext_var;
 
 int _putchar(char c);
 int beautsh(const char *a, unsigned int b);
-int _args(char *m, char **c);
+int _args(char *c, char **args);
 int execute(char **c);
 void _free(char **d, int e);
 void _verfree(char *c);
