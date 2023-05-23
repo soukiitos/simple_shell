@@ -27,5 +27,6 @@ int not_exist(char **args, int m);
 int err_msg(int err);
 int msg_len(const char *s);
 void _cdir(char *dir);
+int str(char *s1, char *s2);
 
 #endif
