@@ -28,5 +28,7 @@ int err_msg(int err);
 int msg_len(const char *s);
 void _cdir(char *dir);
 int str(char *s1, char *s2);
+char *reit_str(char *reis);
+char *get_envr(char *env);
 
 #endif
