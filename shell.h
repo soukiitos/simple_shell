@@ -30,5 +30,6 @@ void _cdir(char *dir);
 int str(char *s1, char *s2);
 char *reit_str(char *reis);
 char *get_envr(char *env);
+char *com_path(char *dir_p, char *com);
 
 #endif
