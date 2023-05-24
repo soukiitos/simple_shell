@@ -55,7 +55,7 @@ char *get_envr(char *env)
 		for (; env_a != NULL; i++)
 		{
 			env_b = strtok(env_a, eq);
-			if (reit_str(env_b, env) == 0)
+			if (str(env_b, env) == 0)
 			{
 				env_b = strtok(NULL, eq);
 				env_c = reit_str(env_b);
