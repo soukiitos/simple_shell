@@ -7,9 +7,8 @@
  */
 int execute(char **args)
 {
-	int e, g;
+	int f, g;
 	pid_t e = 0;
-	/** pid_t is a signed int which is capable of representing a process ID */
 	char **ext_var = NULL;
 
 	e = fork();
