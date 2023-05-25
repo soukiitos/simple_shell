@@ -40,12 +40,9 @@ char *get_envr(char *env)
 	const char eq[] = "=";
 	int i = 0;
 	char *env_a, *env_b, *env_c;
+	char **ext_var = NULL;
 
-	if (env == NULL)
-	{
-		return (NULL);
-	}
-	else
+	if (env != NULL)
 	{
 		if (ext_var == NULL)
 		{

@@ -8,6 +8,7 @@
 int execute(char **args)
 {
 	int e, f, g;
+	char **ext_var = NULL;
 
 	e = fork();
 	if (e == 0)
