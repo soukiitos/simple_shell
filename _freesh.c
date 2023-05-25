@@ -15,5 +15,7 @@ void _free(char **d, int e)
 		free(d[f]);
 	}
 	if (d == NULL)
+	{
 		return;
+	}
 }

@@ -7,7 +7,9 @@
  */
 int execute(char **args)
 {
-	int e, f, g;
+	int f, g;
+	pid_t e = 0;
+	char **ext_var = NULL;
 
 	e = fork();
 	if (e == 0)
@@ -17,11 +19,7 @@ int execute(char **args)
 		 * execve() executes a process from another process.
 		 * executes the file or executable which is specified in the path args.
 		 */
-		if (f != -1)
-		{
-			exit(0);
-		}
-		else
+		if (f == -1)
 		{
 			f = 126;
 			/** perror() prints a descriptive error msg to stderr. */
@@ -32,7 +30,7 @@ int execute(char **args)
 	}
 	else if (e == -1)
 	{
-		beautsh("not found\n", 7);
+		beautsh("failed\n", 7);
 	}
 	else
 		wait(&g);
