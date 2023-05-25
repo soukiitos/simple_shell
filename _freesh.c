@@ -10,10 +10,12 @@ void _free(char **d, int e)
 {
 	int f;
 
+	if (d == NULL)
+	{
+		return;
+	}
 	for (f = 0; f < e; f++)
 	{
 		free(d[f]);
 	}
-	if (d == NULL)
-		return;
 }

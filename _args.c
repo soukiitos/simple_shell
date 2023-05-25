@@ -15,10 +15,11 @@ int _args(char *c, char **args)
 	/** strtok() returns a pointer to the first token found in the string */
 	a = 0;
 	args[a] = k;
-	for (a = 0; !j; a++)
+	for (; j != NULL; )
 	{
-		j = i;
+		++a;
 		i = strtok(NULL, "\n\t\r ");
+		j = i;
 		args[a] = i;
 	}
 	args[a] = NULL;
